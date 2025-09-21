@@ -1,0 +1,27 @@
+{
+    "scraper": {
+        "max_reviews": 50,
+        "wait_time": 3,
+        "scroll_pause_time": 2,
+        "date_filter_months": 12,
+        "headless": true
+    },
+    "rag": {
+        "embedding_model": "all-MiniLM-L6-v2",
+        "vector_dim": 384,
+        "top_k": 5,
+        "similarity_threshold": 0.5
+    },
+    "llm": {
+        "model": "gpt-3.5-turbo",
+        "max_tokens": 1000,
+        "temperature": 0.7,
+        "fallback_to_ollama": true,
+        "ollama_model": "llama2"
+    },
+    "logging": {
+        "level": "INFO",
+        "file": "app.log",
+        "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    }
+}
